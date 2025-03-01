@@ -1,0 +1,164 @@
+/* Banner.css */
+
+/* Full-Screen Banner Container */
+.banner-container {
+  width: 100%;
+  height: 100%; /* Full viewport height */
+  position: relative;
+  overflow: hidden;
+  background: #1a1a1a; /* Dark background for the container */
+}
+
+/* Banner Slide */
+.banner-slide {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+}
+
+/* Banner Image */
+.banner-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image covers the container */
+}
+
+/* Banner Overlay */
+.banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Align content to the left */
+  padding: 0 5%; /* Add padding */
+}
+
+/* Banner Details */
+.banner-details {
+  max-width: 600px; /* Limit the width of the details */
+  color: white;
+  text-align: left; /* Align text to the left */
+}
+
+.banner-details h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #ff6b6b; /* Accent color */
+}
+
+.banner-details p {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.8); /* Semi-transparent text */
+  margin-bottom: 30px;
+}
+
+/* Banner Buttons */
+.banner-buttons {
+  display: flex;
+  gap: 15px; /* Space between buttons */
+}
+
+.banner-buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.watch-now {
+  background: #ff6b6b;
+  color: white;
+}
+
+.watch-now:hover {
+  background: #ff4b4b;
+  transform: translateY(-2px);
+}
+
+.add-to-list {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.add-to-list:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+/* React Slick Overrides */
+.slick-prev,
+.slick-next {
+  z-index: 1; /* Ensure arrows are above the image */
+  width: 40px; /* Arrow width */
+  height: 40px; /* Arrow height */
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #ff6b6b; /* Arrow color */
+  font-size: 40px; /* Larger arrows */
+}
+
+.slick-prev {
+  left: 25px; /* Position left arrow */
+}
+
+.slick-next {
+  right: 25px; /* Position right arrow */
+}
+
+/* Dots Positioning and Animation */
+.slick-dots {
+  position: absolute;
+  bottom: 20px; /* Position dots at the bottom */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center horizontally */
+  display: flex ;/* Ensure dots are displayed */
+  justify-content: center;
+  gap: 10px; /* Space between dots */
+  
+}
+
+.slick-dots li {
+  margin: 0; /* Remove default margin */
+}
+
+.slick-dots li button:before {
+  color: #ff6b6b; /* Dots color */
+  font-size: 12px; /* Larger dots */
+  opacity: 0.5; /* Semi-transparent dots */
+  transition: opacity 0.3s ease; /* Smooth transition */
+}
+
+.slick-dots li.slick-active button:before {
+  color: #ff6b6b; /* Active dot color */
+  opacity: 1; /* Fully visible active dot */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .banner-details h1 {
+    font-size: 2rem; /* Smaller heading for mobile */
+  }
+
+  .banner-details p {
+    font-size: 1rem; /* Smaller text for mobile */
+  }
+
+  .banner-buttons button {
+    padding: 8px 16px; /* Smaller buttons for mobile */
+    font-size: 0.9rem;
+  }
+
+  .slick-prev:before,
+  .slick-next:before {
+    font-size: 30px; /* Smaller arrows for mobile */
+  }
+}

@@ -1,0 +1,45 @@
+/* Footer.css */
+.footer {
+  background-color: #343a40; /* Dark background */
+  color: #ffffff; /* White text */
+  padding: 40px 0;
+}
+
+.footer h5 {
+  color: #ff6f61; /* Anime-themed accent color */
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.footer h5 i {
+  margin-right: 10px; /* Space between icon and text */
+}
+
+.footer ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.footer ul li {
+  margin-bottom: 10px;
+}
+
+.footer-link {
+  color: #ffffff; /* White text */
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #ff6f61; /* Anime-themed accent color on hover */
+}
+
+.footer-link i {
+  margin-right: 8px; /* Space between icon and text */
+}
+
+.list-inline-item {
+  display: inline-block;
+  margin-right: 15px;
+}
