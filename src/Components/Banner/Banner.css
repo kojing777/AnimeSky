@@ -3,24 +3,24 @@
 /* Full-Screen Banner Container */
 .banner-container {
   width: 100%;
-  height: 100%; /* Full viewport height */
+  height: 100%; 
   position: relative;
   overflow: hidden;
-  background: #1a1a1a; /* Dark background for the container */
+  background: #1a1a1a; 
 }
 
 /* Banner Slide */
 .banner-slide {
   position: relative;
   width: 100%;
-  height: 100vh; /* Full viewport height */
+  height: 100vh;
 }
 
 /* Banner Image */
 .banner-image {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensure the image covers the container */
+  object-fit: cover; 
 }
 
 /* Banner Overlay */
@@ -30,36 +30,36 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  background: rgba(0, 0, 0, 0.5); 
   display: flex;
   align-items: center;
-  justify-content: flex-start; /* Align content to the left */
-  padding: 0 5%; /* Add padding */
+  justify-content: flex-start;
+  padding: 0 5%; 
 }
 
 /* Banner Details */
 .banner-details {
-  max-width: 600px; /* Limit the width of the details */
+  max-width: 600px;
   color: white;
-  text-align: left; /* Align text to the left */
+  text-align: left; 
 }
 
 .banner-details h1 {
   font-size: 3rem;
   margin-bottom: 20px;
-  color: #ff6b6b; /* Accent color */
+  color: #ff6b6b;
 }
 
 .banner-details p {
   font-size: 1.2rem;
-  color: rgba(255, 255, 255, 0.8); /* Semi-transparent text */
+  color: rgba(255, 255, 255, 0.8); 
   margin-bottom: 30px;
 }
 
 /* Banner Buttons */
 .banner-buttons {
   display: flex;
-  gap: 15px; /* Space between buttons */
+  gap: 15px; 
 }
 
 .banner-buttons button {
@@ -95,70 +95,70 @@
 /* React Slick Overrides */
 .slick-prev,
 .slick-next {
-  z-index: 1; /* Ensure arrows are above the image */
-  width: 40px; /* Arrow width */
-  height: 40px; /* Arrow height */
+  z-index: 1; 
+  width: 40px; 
+  height: 40px;
 }
 
 .slick-prev:before,
 .slick-next:before {
-  color: #ff6b6b; /* Arrow color */
-  font-size: 40px; /* Larger arrows */
+  color: #ff6b6b; 
+  font-size: 40px;
 }
 
 .slick-prev {
-  left: 25px; /* Position left arrow */
+  left: 25px; 
 }
 
 .slick-next {
-  right: 25px; /* Position right arrow */
+  right: 25px; 
 }
 
 /* Dots Positioning and Animation */
 .slick-dots {
   position: absolute;
-  bottom: 20px; /* Position dots at the bottom */
-  left: 50%; /* Center horizontally */
-  transform: translateX(-50%); /* Center horizontally */
-  display: flex ;/* Ensure dots are displayed */
+  bottom: 20px;
+  left: 50%; 
+  transform: translateX(-50%); 
+  display: flex ;
   justify-content: center;
-  gap: 10px; /* Space between dots */
+  gap: 10px; 
   
 }
 
 .slick-dots li {
-  margin: 0; /* Remove default margin */
+  margin: 0; 
 }
 
 .slick-dots li button:before {
-  color: #ff6b6b; /* Dots color */
-  font-size: 12px; /* Larger dots */
-  opacity: 0.5; /* Semi-transparent dots */
-  transition: opacity 0.3s ease; /* Smooth transition */
+  color: #ff6b6b; 
+  font-size: 12px; 
+  opacity: 0.5;
+  transition: opacity 0.3s ease; 
 }
 
 .slick-dots li.slick-active button:before {
-  color: #ff6b6b; /* Active dot color */
-  opacity: 1; /* Fully visible active dot */
+  color: #ff6b6b; 
+  opacity: 1; 
 }
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
   .banner-details h1 {
-    font-size: 2rem; /* Smaller heading for mobile */
+    font-size: 2rem; 
   }
 
   .banner-details p {
-    font-size: 1rem; /* Smaller text for mobile */
+    font-size: 1rem;
   }
 
   .banner-buttons button {
-    padding: 8px 16px; /* Smaller buttons for mobile */
+    padding: 8px 16px; 
     font-size: 0.9rem;
   }
 
   .slick-prev:before,
   .slick-next:before {
-    font-size: 30px; /* Smaller arrows for mobile */
+    font-size: 30px; 
   }
 }

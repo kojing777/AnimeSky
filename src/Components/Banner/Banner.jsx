@@ -47,15 +47,15 @@ const Banner = () => {
 
   // React Slick settings
   const settings = {
-    dots: true, // Show dots for navigation
-    infinite: true, // Infinite looping
-    speed: 500, // Transition speed
-    slidesToShow: 1, // Show 1 slide at a time
-    slidesToScroll: 1, // Scroll 1 slide at a time
-    autoplay: true, // Enable autoplay
-    autoplaySpeed: 3000, // Autoplay interval (3 seconds)
-    arrows: true, // Show navigation arrows
-    fade: true, // Add fade effect
+    dots: true, 
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1, 
+    slidesToScroll: 1, 
+    autoplay: true, 
+    autoplaySpeed: 3000, 
+    arrows: true,
+    fade: true, 
   };
 
   return (

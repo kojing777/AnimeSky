@@ -1,18 +1,18 @@
 /* Footer.css */
 .footer {
-  background-color: #343a40; /* Dark background */
-  color: #ffffff; /* White text */
+  background-color: #343a40;
+  color: #ffffff;
   padding: 40px 0;
 }
 
 .footer h5 {
-  color: #ff6f61; /* Anime-themed accent color */
+  color: #ff6f61; 
   margin-bottom: 15px;
   font-size: 18px;
 }
 
 .footer h5 i {
-  margin-right: 10px; /* Space between icon and text */
+  margin-right: 10px; 
 }
 
 .footer ul {
@@ -25,18 +25,18 @@
 }
 
 .footer-link {
-  color: #ffffff; /* White text */
+  color: #ffffff; 
   text-decoration: none;
   font-size: 14px;
   transition: color 0.3s ease;
 }
 
 .footer-link:hover {
-  color: #ff6f61; /* Anime-themed accent color on hover */
+  color: #ff6f61; 
 }
 
 .footer-link i {
-  margin-right: 8px; /* Space between icon and text */
+  margin-right: 8px; 
 }
 
 .list-inline-item {

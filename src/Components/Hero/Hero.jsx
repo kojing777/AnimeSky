@@ -96,7 +96,7 @@ function AutoPlay() {
         &lt; {/* Previous symbol */}
       </button>
       <button
-        onClick={() => sliderRef.current.slickNext()}// Go to next slide
+        onClick={() => sliderRef.current.slickNext()}
         style={{
           position: "absolute",
           right: "-50px",

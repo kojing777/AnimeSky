@@ -45,14 +45,14 @@
 }
 /* Navbar.css */
 
-/* Hide the dropdown indicator (arrow) */
+
 .dropdown-toggle::after {
   display: none !important;
 }
 
 /* Dropdown Menu Styling */
 .dropdown-menu {
-  background-color: #343a40; /* Dark background for dropdown */
+  background-color: #343a40; 
   border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
@@ -67,7 +67,7 @@
 .dropdown-item:hover {
   background-color: rgba(255, 255, 255, 0.1);
   color: #ff6b6b !important;
-  transform: translateX(5px); /* Slight horizontal movement on hover */
+  transform: translateX(5px); 
 }
 
 /* Dropdown Divider Styling */

@@ -9,17 +9,17 @@ const NewNew = () => {
   const animeList = [
     {
       id: 1,
-      title: "Attack on Titan",
+      title: "Dragon Ball Daima",
       description:
-        "Humanity fights for survival against giant humanoid creatures known as Titans.",
-      image: "https://i.pinimg.com/474x/62/92/73/629273455138cc31f3d5287d713ff9d8.jpg",
+        "Goku and friends turn into kids, battle foes, and seek restoration.",
+      image: "https://i.pinimg.com/474x/37/59/47/37594792e261fafb802f7c9c5807b8be.jpg",
     },
     {
       id: 2,
-      title: "My Hero Academia",
+      title: "Solo Leveling",
       description:
-        "A boy born without superpowers in a world full of them dreams of becoming a hero.",
-      image: "https://i.pinimg.com/474x/e9/51/3d/e9513d8fce1ca4f5a51e6954dbbc7a99.jpg",
+        "Weakest hunter Sung Jinwoo rises to power, battling monsters and evil forces.",
+      image: "https://i.pinimg.com/474x/6b/c7/d3/6bc7d34eb329d199770c499ac0f71b92.jpg",
     },
     {
       id: 3,
@@ -30,10 +30,10 @@ const NewNew = () => {
     },
     {
       id: 4,
-      title: "Naruto",
+      title: "Sakamoto Days",
       description:
-        "A young ninja dreams of becoming the strongest ninja and leader of his village.",
-      image: "https://i.pinimg.com/474x/26/66/5c/26665c12d6c84f439e0b9dc35b01a58a.jpg",
+        "Sakamoto, a retired hitman, juggles family life and chaotic assassins.",
+      image: "https://i.pinimg.com/474x/77/89/ee/7789ee30cab577332fc5dd46ec2cdf12.jpg",
     },
     {
       id: 5,
@@ -51,24 +51,24 @@ const NewNew = () => {
     },
     {
       id: 7,
-      title: "Death Note",
+      title: "No Longer Allowed In Another World",
       description:
-        "A high school student discovers a supernatural notebook that can kill anyone whose name is written in it.",
-      image: "https://i.pinimg.com/474x/82/90/06/829006f7d871f3039e4ded4e902d19a0.jpg",
+        "",
+      image: "https://i.pinimg.com/474x/31/17/71/3117715541272715a23a67fad0b57275.jpg",
     },
     {
       id: 8,
-      title: "Fullmetal Alchemist",
+      title: "Chainsaw Man",
       description:
-        "Two brothers search for the Philosopher's Stone to restore their bodies after a failed alchemy experiment.",
-      image: "https://i.pinimg.com/474x/ab/e7/4c/abe74ca646c2680ab45967fa3a47d16d.jpg",
+        "Denji merges with Chainsaw Devil, battles demons, and seeks a normal life.",
+      image: "https://i.pinimg.com/474x/da/dc/99/dadc99a7f94d6f867b0cd71014b23eb4.jpg",
     },
     {
       id: 9,
-      title: "Tokyo Ghoul",
+      title: "Blue Box",
       description:
-        "A college student becomes a half-ghoul after an encounter with a ghoul and must navigate both worlds.",
-      image: "https://i.pinimg.com/474x/39/90/d9/3990d9a269712084403bd71e4a07563c.jpg",
+        "High school romance blossoms between badminton player Taiki and basketball star Chinatsu.",
+      image: "https://i.pinimg.com/474x/a9/56/b4/a956b4e1c3f9112d84120b5834f3d3b6.jpg",
     },
     {
       id: 10,
@@ -81,24 +81,31 @@ const NewNew = () => {
 
   // React Slick settings
   const settings = {
-    dots: true, // Show dots for navigation
-    infinite: true, // Infinite looping
-    speed: 500, // Transition speed
-    slidesToShow: 3, // Show 3 slides at a time
-    slidesToScroll: 1, // Scroll 1 slide at a time
-    autoplay: true, // Enable autoplay
-    autoplaySpeed: 3000, // Autoplay interval (3 seconds)
-    arrows: true, // Show navigation arrows
+    dots: true, 
+    infinite: true, 
+    speed: 500,
+    slidesToShow: 4, 
+    slidesToScroll: 1, 
+    autoplay: true, 
+    autoplaySpeed: 1000, 
+    arrows: true, 
     responsive: [
       {
-        breakpoint: 1024, // Adjust for tablets
+        breakpoint: 1024, 
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 768, 
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
         },
       },
       {
-        breakpoint: 768, // Adjust for mobile
+        breakpoint: 480,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
