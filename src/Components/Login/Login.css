@@ -141,3 +141,24 @@
   .social-button.twitter:hover {
     background: #1da1f2;
   }
+
+  .password-group {
+    position: relative;
+  }
+  
+  .password-input-container {
+    position: relative;
+  }
+  
+  .password-toggle-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #666;
+  }
+  
+  .password-toggle-icon:hover {
+    color: #000;
+  }

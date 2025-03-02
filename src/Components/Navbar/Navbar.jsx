@@ -1,12 +1,12 @@
 import React from "react";
 import "./Navbar.css"; // Import the CSS file
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
 const Navbar = () => {
   const [showSearch, setShowSearch] = React.useState(false);
-  
+
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-light bg-dark ">
+      <nav className="navbar navbar-expand-lg  top-fixed navbar-light bg-dark ">
         <div className="container-fluid px-2 mx-2">
           <button
             className="navbar-toggler"
@@ -23,7 +23,7 @@ const Navbar = () => {
             className="navbar-brand text-danger fw-bold fs-3 py-2 px-3"
             to="/"
           >
-            H!Anime
+            ZenAnime
           </Link>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
@@ -123,32 +123,28 @@ const Navbar = () => {
                 </ul>
               </li>
             </ul>
-
-           
-
-
           </div>
           <form className={`search-form ${showSearch ? "active" : ""}`}>
-                <input
-                  className={`form-control search-input ${showSearch ? "show" : ""}`}
-                  type="search"
-                  placeholder="Search"
-                  aria-label="Search"
-                />
-                <button
-                  className="btn btn-link text-white search-icon"
-                  type="button"
-                  onClick={() => setShowSearch(!showSearch)}
-                >
-                  <i className="fas fa-search"></i>
-                </button>
-              </form>
+            <input
+              className={`form-control search-input ${showSearch ? "show" : ""
+                }`}
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button
+              className="btn btn-link text-white search-icon"
+              type="button"
+              onClick={() => setShowSearch(!showSearch)}
+            >
+              <i className="fas fa-search"></i>
+            </button>
+          </form>
 
-        
           <Link to="/login" className="btn btn-outline-light">
-                <i className="fas fa-sign-in-alt me-2"></i>
-                Log In
-              </Link>
+            <i className="fas fa-sign-in-alt me-2"></i>
+            Log In
+          </Link>
         </div>
       </nav>
     </div>

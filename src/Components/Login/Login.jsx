@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./Login.css";
+import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
 
 const Login = () => {
+  const [showPassword, setShowPassword] = useState(false);
+
   const handleLogin = (e) => {
     e.preventDefault();
     // Simulate login logic
@@ -16,6 +19,10 @@ const Login = () => {
       pauseOnHover: true,
       draggable: true,
     });
+  };
+
+  const togglePasswordVisibility = () => {
+    setShowPassword(!showPassword);
   };
 
   return (
@@ -34,15 +41,20 @@ const Login = () => {
               required
             />
           </div>
-          <div className="form-group">
+          <div className="form-group password-group">
             <label htmlFor="password">Password</label>
-            <input
-              type="password"
-              id="password"
-              className="form-control"
-              placeholder="Enter your password"
-              required
-            />
+            <div className="password-input-container">
+              <input
+                type={showPassword ? "text" : "password"}
+                id="password"
+                className="form-control"
+                placeholder="Enter your password"
+                required
+              />
+              <span className="password-toggle-icon" onClick={togglePasswordVisibility}>
+                {showPassword ? <FaRegEyeSlash /> : <FaRegEye />}
+              </span>
+            </div>
           </div>
           <button type="submit" className="login-button">
             Sign In
