@@ -1,11 +1,12 @@
 import React from "react";
 import "./Navbar.css"; // Import the CSS file
 import { Link } from "react-router-dom";
+
 const Navbar = () => {
   const [showSearch, setShowSearch] = React.useState(false);
 
   return (
-    <div>
+    
       <nav className="navbar navbar-expand-lg  top-fixed navbar-light bg-dark ">
         <div className="container-fluid px-2 mx-2">
           <button
@@ -147,7 +148,7 @@ const Navbar = () => {
           </Link>
         </div>
       </nav>
-    </div>
+    
   );
 };
 
