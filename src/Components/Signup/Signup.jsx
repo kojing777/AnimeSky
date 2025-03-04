@@ -29,7 +29,7 @@ const SignUp = () => {
     <div className="signup-container">
       <div className="signup-card">
         <h2 className="signup-title">Create an Account</h2>
-        <p className="signup-subtitle">Join H!Anime to explore more</p>
+        <p className="signup-subtitle">Join An!meSky to explore more</p>
         <form className="signup-form" onSubmit={handleSignUp}>
           <div className="form-group">
             <label htmlFor="username">Username</label>

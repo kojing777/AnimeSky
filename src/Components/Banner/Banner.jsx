@@ -24,7 +24,7 @@ const Banner = () => {
     },
     {
       id: 3,
-      image: "https://i.pinimg.com/474x/89/50/a1/8950a168a4c8d5536c4f4dcc9d0ce26c.jpg",
+      image: "https://i.pinimg.com/474x/38/85/46/388546f29b9265a1d1b82829fb05028a.jpg",
       title: "Jujutsu Kaisen",
       description:
         "A boy swallows a cursed talisman - the finger of a demon - and becomes cursed himself. He enters a shaman's school to be able to locate the demon's other body parts and thus exorcise himself.",

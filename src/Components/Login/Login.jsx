@@ -29,7 +29,7 @@ const Login = () => {
     <div className="login-container">
       <div className="login-card">
         <h2 className="login-title">Welcome Back!</h2>
-        <p className="login-subtitle">Sign in to continue to H!Anime</p>
+        <p className="login-subtitle">Sign in to continue to An!meSky</p>
         <form className="login-form" onSubmit={handleLogin}>
           <div className="form-group">
             <label htmlFor="email">Email</label>

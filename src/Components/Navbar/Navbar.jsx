@@ -24,7 +24,7 @@ const Navbar = () => {
             className="navbar-brand text-danger fw-bold fs-3 py-2 px-3"
             to="/"
           >
-            ZenAnime
+            An!meSky
           </Link>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
