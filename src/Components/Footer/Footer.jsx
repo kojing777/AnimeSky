@@ -1,5 +1,6 @@
 import React from 'react';
 import './Footer.css'; // Import the CSS file
+import { Link } from 'react-router-dom'; // Import the Link component
 
 const Footer = () => {
   return (
@@ -10,7 +11,7 @@ const Footer = () => {
           <div className="col-md-3">
             <h5>Navigation</h5>
             <ul className="list-unstyled">
-              <li><a href="/browse-popular" className="footer-link">Browse Popular</a></li>
+              <li><Link to="/popular" className="footer-link">Browse Popular</Link></li>
               <li><a href="/browse-simulcasts" className="footer-link">Browse Simulcasts</a></li>
               <li><a href="/release-calendar" className="footer-link">Release Calendar</a></li>
               <li><a href="/news" className="footer-link">News</a></li>
@@ -75,7 +76,7 @@ const Footer = () => {
           <div className="col-md-12">
             <h5>About & Support</h5>
             <ul className="list-inline">
-              <li className="list-inline-item"><a href="/about" className="footer-link">About</a></li>
+              <li className="list-inline-item"><Link to="/about" className="footer-link">About</Link></li>
               <li className="list-inline-item"><a href="/help-center" className="footer-link">Help Center</a></li>
               <li className="list-inline-item"><a href="/press-inquiries" className="footer-link">Press Inquiries</a></li>
               <li className="list-inline-item"><a href="/get-the-apps" className="footer-link">Get the Apps</a></li>

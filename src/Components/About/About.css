@@ -1,0 +1,86 @@
+/* About.css */
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+  }
+  
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-image {
+    margin-bottom: 20px;
+  }
+  
+  .owner-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #ff6f61;
+  }
+  
+  .about-text {
+    text-align: center;
+  }
+  
+  .about-text h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .about-text p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .about-content {
+      flex-direction: column;
+      padding: 15px;
+    }
+  
+    .owner-image {
+      width: 150px;
+      height: 150px;
+    }
+  
+    .about-text h1 {
+      font-size: 2rem;
+    }
+  
+    .about-text p {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .owner-image {
+      width: 120px;
+      height: 120px;
+    }
+  
+    .about-text h1 {
+      font-size: 1.8rem;
+    }
+  
+    .about-text p {
+      font-size: 0.9rem;
+    }
+  }

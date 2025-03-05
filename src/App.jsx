@@ -2,20 +2,18 @@ import React from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-
-
 import Banner from "./Components/Banner/Banner";
 import Footer from "./Components/Footer/Footer";
 import Navbar from "./Components/Navbar/Navbar";
 import Hero from "./Components/Hero/Hero";
-import NewNew from "./Components/NewNew/NewNew"; // Ensure this is imported
-import AboutMe from "./Components/Popular/Popular"; // You can leave other routes as they are
+import NewNew from "./Components/NewNew/NewNew"; 
+import AboutMe from "./Components/Popular/Popular"; 
 import Home from "./Components/Home";
 import Login from "./Components/Login/Login";
 import Signup from "./Components/Signup/Signup";
 import Popular from "./Components/Popular/Popular";
 import PopularGames from "./Components/PopularGames/PopularGames";
-
+import About from "./Components/About/About";
 
 function App() {
   return (
@@ -34,13 +32,10 @@ function App() {
           <Route path="/Games" element={<PopularGames />} /> 
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
+          <Route path="/About" element={<About />} />
         </Routes>
       </div>
-
-      {/* Banner and Hero stay static on all pages */}
-    
       <Hero />
-      
       {/* Footer stays at the bottom */}
       <Footer />
    
