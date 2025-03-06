@@ -29,6 +29,7 @@ function App() {
           
           <Route path="/new" element={<NewNew />} /> {/* This route still renders NewNew */}
           <Route path="/popular" element={<Popular />} />
+          <Route path="/completed" element={<Popular />} />
           <Route path="/Games" element={<PopularGames />} /> 
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />

@@ -1,0 +1,10 @@
+/* src/index.css or src/App.css */
+body.light {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  body.dark {
+    background-color: #343a40;
+    color: #ffffff;
+  }

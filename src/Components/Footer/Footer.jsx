@@ -76,7 +76,7 @@ const Footer = () => {
           <div className="col-md-12">
             <h5>About & Support</h5>
             <ul className="list-inline">
-              <li className="list-inline-item"><Link to="/about" className="footer-link">About</Link></li>
+              <li className="list-inline-item"><Link to="/About" className="footer-link">About</Link></li>
               <li className="list-inline-item"><a href="/help-center" className="footer-link">Help Center</a></li>
               <li className="list-inline-item"><a href="/press-inquiries" className="footer-link">Press Inquiries</a></li>
               <li className="list-inline-item"><a href="/get-the-apps" className="footer-link">Get the Apps</a></li>

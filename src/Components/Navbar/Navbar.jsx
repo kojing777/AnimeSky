@@ -4,6 +4,14 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [showSearch, setShowSearch] = React.useState(false);
+  const [theme, setTheme] = React.useState("dark"); // Default theme is dark
+
+  // Function to toggle theme
+  const toggleTheme = () => {
+    const newTheme = theme === "dark" ? "light" : "dark";
+    setTheme(newTheme);
+    document.body.setAttribute("data-theme", newTheme); // Apply theme to the body
+  };
 
   return (
     <nav className="navbar navbar-expand-lg top-fixed navbar-light bg-dark">
@@ -140,6 +148,15 @@ const Navbar = () => {
           </button>
         </form>
 
+        {/* Theme Changer Button */}
+        <button
+          className="btn btn-outline-light theme-changer"
+          onClick={toggleTheme}
+        >
+          <i className={`fas ${theme === "dark" ? "fa-sun" : "fa-moon"}`}></i>
+        </button>
+
+        {/* Profile Icon */}
         <Link to="/login" className="btn btn-outline-light profile-icon">
           <i className="fas fa-user"></i> {/* Profile icon */}
         </Link>
