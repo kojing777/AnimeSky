@@ -2,10 +2,9 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "./Banner.css"; // Import the CSS file
+import "./Banner.css"; // Ensure this path is correct
 
 const Banner = () => {
-  
   // Banner data
   const bannerData = [
     {
@@ -47,15 +46,15 @@ const Banner = () => {
 
   // React Slick settings
   const settings = {
-    dots: true, 
+    dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 1, 
-    slidesToScroll: 1, 
-    autoplay: true, 
-    autoplaySpeed: 3000, 
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
     arrows: true,
-    fade: true, 
+    fade: true,
   };
 
   return (

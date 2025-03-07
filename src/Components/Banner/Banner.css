@@ -1,26 +1,24 @@
-/* Banner.css */
-
 /* Full-Screen Banner Container */
 .banner-container {
   width: 100%;
-  height: 100%; 
+  height: 100vh; /* Full viewport height */
   position: relative;
   overflow: hidden;
-  background: #1a1a1a; 
+  background: #1a1a1a;
 }
 
 /* Banner Slide */
 .banner-slide {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 100vh; /* Full viewport height */
 }
 
 /* Banner Image */
 .banner-image {
   width: 100%;
   height: 100%;
-  object-fit: cover; 
+  object-fit: cover; /* Ensures the image covers the entire slide */
 }
 
 /* Banner Overlay */
@@ -30,18 +28,18 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5); 
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding: 0 5%; 
+  padding: 0 5%; /* Padding for text alignment */
 }
 
 /* Banner Details */
 .banner-details {
   max-width: 600px;
   color: white;
-  text-align: left; 
+  text-align: left;
 }
 
 .banner-details h1 {
@@ -52,14 +50,14 @@
 
 .banner-details p {
   font-size: 1.2rem;
-  color: rgba(255, 255, 255, 0.8); 
+  color: rgba(255, 255, 255, 0.8);
   margin-bottom: 30px;
 }
 
 /* Banner Buttons */
 .banner-buttons {
   display: flex;
-  gap: 15px; 
+  gap: 15px;
 }
 
 .banner-buttons button {
@@ -95,57 +93,56 @@
 /* React Slick Overrides */
 .slick-prev,
 .slick-next {
-  z-index: 1; 
-  width: 40px; 
+  z-index: 1;
+  width: 40px;
   height: 40px;
 }
 
 .slick-prev:before,
 .slick-next:before {
-  color: #ff6b6b; 
+  color: #ff6b6b;
   font-size: 40px;
 }
 
 .slick-prev {
-  left: 25px; 
+  left: 25px;
 }
 
 .slick-next {
-  right: 25px; 
+  right: 25px;
 }
 
 /* Dots Positioning and Animation */
 .slick-dots {
   position: absolute;
   bottom: 20px;
-  left: 50%; 
-  transform: translateX(-50%); 
-  display: flex ;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
   justify-content: center;
-  gap: 10px; 
-  
+  gap: 10px;
 }
 
 .slick-dots li {
-  margin: 0; 
+  margin: 0;
 }
 
 .slick-dots li button:before {
-  color: #ff6b6b; 
-  font-size: 12px; 
+  color: #ff6b6b;
+  font-size: 12px;
   opacity: 0.5;
-  transition: opacity 0.3s ease; 
+  transition: opacity 0.3s ease;
 }
 
 .slick-dots li.slick-active button:before {
-  color: #ff6b6b; 
-  opacity: 1; 
+  color: #ff6b6b;
+  opacity: 1;
 }
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
   .banner-details h1 {
-    font-size: 2rem; 
+    font-size: 2rem;
   }
 
   .banner-details p {
@@ -153,12 +150,12 @@
   }
 
   .banner-buttons button {
-    padding: 8px 16px; 
+    padding: 8px 16px;
     font-size: 0.9rem;
   }
 
   .slick-prev:before,
   .slick-next:before {
-    font-size: 30px; 
+    font-size: 30px;
   }
 }

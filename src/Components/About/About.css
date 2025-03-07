@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   padding: 40px 20px;
-  background-color: #1a1a1a; /* Dark background for contrast */
+  background-color: #1a1a1a;
   min-height: 100vh;
 }
 
@@ -14,11 +14,11 @@
   align-items: center;
   max-width: 1200px;
   width: 100%;
-  background-color: #2a2a2a; /* Slightly lighter dark background */
+  background-color: #2a2a2a; 
   padding: 40px;
   border-radius: 15px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-  color: #fff; /* White text for contrast */
+  color: #fff; 
   text-align: center;
 }
 
@@ -31,28 +31,47 @@
   height: 200px;
   border-radius: 50%;
   object-fit: cover;
-  border: 5px solid #ff6f61; /* Bright accent color */
+  border: 5px solid #ff6f61;
   transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
 .owner-image:hover {
-  transform: scale(1.1); /* Slight zoom effect on hover */
-  border-color: #ff3b2f; /* Brighter accent color on hover */
+  transform: scale(1.1); 
+  border-color: #ff3b2f;
 }
 
 .about-text h1 {
   font-size: 2.5rem;
-  color: #ff6f61; /* Accent color for the heading */
+  color: #ff6f61;
   margin-bottom: 20px;
   font-weight: bold;
 }
 
 .about-text p {
   font-size: 1.1rem;
-  color: #ddd; /* Light gray for readability */
+  color: #ddd; 
   line-height: 1.8;
   margin-bottom: 20px;
   max-width: 600px;
+}
+
+/* Social Links Section */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 25px; /* Space between icons */
+  margin-top: 20px;
+}
+
+.social-icon {
+  color: #fff; /* White icons */
+  font-size: 2rem; /* Icon size */
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  color: #ff6f61; /* Accent color on hover */
 }
 
 /* Responsive Design */
@@ -73,6 +92,10 @@
   .about-text p {
     font-size: 1rem;
   }
+
+  .social-icon {
+    font-size: 1.8rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -91,5 +114,9 @@
 
   .about-text p {
     font-size: 0.9rem;
+  }
+
+  .social-icon {
+    font-size: 1.5rem;
   }
 }

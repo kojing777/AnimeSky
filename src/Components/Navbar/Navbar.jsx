@@ -63,7 +63,7 @@ const Navbar = () => {
               </Link>
               <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li>
-                  <Link className="dropdown-item" to="/action">
+                  <Link className="dropdown-item" to="/About">
                     Action
                   </Link>
                 </li>
@@ -132,7 +132,7 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <form className={`search-form ${showSearch ? "active" : ""}`}>
+        <for7m className={`search-form ${showSearch ? "active" : ""}`}>
           <input
             className={`form-control search-input ${showSearch ? "show" : ""}`}
             type="search"
@@ -146,7 +146,7 @@ const Navbar = () => {
           >
             <i className="fas fa-search"></i>
           </button>
-        </form>
+        </for7m>
 
         {/* Theme Changer Button */}
         <button
@@ -158,7 +158,7 @@ const Navbar = () => {
 
         {/* Profile Icon */}
         <Link to="/login" className="btn btn-outline-light profile-icon">
-          <i className="fas fa-user"></i> {/* Profile icon */}
+          <i className="fas fa-user"></i>
         </Link>
       </div>
     </nav>

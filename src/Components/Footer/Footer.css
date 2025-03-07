@@ -3,16 +3,17 @@
   background-color: #343a40;
   color: #ffffff;
   padding: 40px 0;
+  margin-top: auto; /* Push the footer to the bottom */
 }
 
 .footer h5 {
-  color: #ff6f61; 
+  color: #ff6f61;
   margin-bottom: 15px;
   font-size: 18px;
 }
 
 .footer h5 i {
-  margin-right: 10px; 
+  margin-right: 10px;
 }
 
 .footer ul {
@@ -25,18 +26,18 @@
 }
 
 .footer-link {
-  color: #ffffff; 
+  color: #ffffff;
   text-decoration: none;
   font-size: 14px;
   transition: color 0.3s ease;
 }
 
 .footer-link:hover {
-  color: #ff6f61; 
+  color: #ff6f61;
 }
 
 .footer-link i {
-  margin-right: 8px; 
+  margin-right: 8px;
 }
 
 .list-inline-item {
