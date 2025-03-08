@@ -81,7 +81,7 @@ const Popular = () => {
 
   // React Slick settings
   const settings = {
-    dots: true, 
+    dots: false, 
     infinite: true,
     speed: 500, 
     slidesToShow: 3, 
@@ -109,7 +109,8 @@ const Popular = () => {
 
   return (
     <div className="popular">
-      <h2 className="section-title">Popular Anime</h2>
+      <h2 className="section-title">Completed Anime</h2>
+      
       <Slider {...settings}>
         {popularAnimeList.map((anime) => (
           <div key={anime.id} className="anime-card-container">

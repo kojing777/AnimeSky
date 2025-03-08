@@ -5,7 +5,6 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Banner from "./Components/Banner/Banner";
 import Footer from "./Components/Footer/Footer";
 import Navbar from "./Components/Navbar/Navbar";
-import Hero from "./Components/Hero/AutoPlay";
 import NewNew from "./Components/NewNew/NewNew";
 import AboutMe from "./Components/Popular/Popular";
 import Home from "./Components/Home";
@@ -14,7 +13,7 @@ import Signup from "./Components/Signup/Signup";
 import Popular from "./Components/Popular/Popular";
 import PopularGames from "./Components/PopularGames/PopularGames";
 import About from "./Components/About/About";
-import AutoPlay from "./Components/Hero/AutoPlay";
+import TrendingAnimes from "./Components/AnimeSites/TrendingAnimes";
 
 function App() {
   return (
@@ -24,7 +23,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/new" element={<NewNew />} />
-          <Route path="/popular" element={<Popular />} />
+          <Route path="/popular" element={<TrendingAnimes />} />
           <Route path="/completed" element={<Popular />} />
           <Route path="/Games" element={<PopularGames />} />
           <Route path="/login" element={<Login />} />
@@ -33,8 +32,8 @@ function App() {
           <Route path="/Action" element={<About />} />
         </Routes>
       </div>
-    <AutoPlay />
       <Footer />
+
     </div>
   );
 }

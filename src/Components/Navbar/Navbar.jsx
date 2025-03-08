@@ -132,7 +132,7 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <for7m className={`search-form ${showSearch ? "active" : ""}`}>
+        <form className={`search-form ${showSearch ? "active" : ""}`}>
           <input
             className={`form-control search-input ${showSearch ? "show" : ""}`}
             type="search"
@@ -146,7 +146,7 @@ const Navbar = () => {
           >
             <i className="fas fa-search"></i>
           </button>
-        </for7m>
+        </form>
 
         {/* Theme Changer Button */}
         <button
