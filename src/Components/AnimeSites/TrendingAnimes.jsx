@@ -104,4 +104,11 @@ const TrendingAnimes = () => {
   );
 };
 
+
+
+
+
+
+
+
 export default TrendingAnimes;
