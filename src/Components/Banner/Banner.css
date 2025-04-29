@@ -61,47 +61,63 @@
 }
 
 .banner-buttons button {
-  padding: 10px 20px;
+  padding: 12px 24px;
   border: none;
   border-radius: 5px;
   font-size: 1rem;
   font-weight: bold;
   cursor: pointer;
   transition: all 0.3s ease;
+  text-transform: uppercase;
 }
 
 .watch-now {
   background: #ff6b6b;
   color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .watch-now:hover {
   background: #ff4b4b;
   transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
 }
 
 .add-to-list {
   background: rgba(255, 255, 255, 0.1);
   color: white;
+  border: 2px solid #ff6b6b;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .add-to-list:hover {
   background: rgba(255, 255, 255, 0.2);
   transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
 }
 
 /* React Slick Overrides */
 .slick-prev,
 .slick-next {
   z-index: 1;
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 107, 107, 0.8);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+  background: rgba(255, 107, 107, 1);
+  transform: scale(1.1);
 }
 
 .slick-prev:before,
 .slick-next:before {
-  color: #ff6b6b;
-  font-size: 40px;
+  color: white;
+  font-size: 30px;
+  opacity: 1;
 }
 
 .slick-prev {
@@ -110,33 +126,6 @@
 
 .slick-next {
   right: 25px;
-}
-
-/* Dots Positioning and Animation */
-.slick-dots {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-}
-
-.slick-dots li {
-  margin: 0;
-}
-
-.slick-dots li button:before {
-  color: #ff6b6b;
-  font-size: 12px;
-  opacity: 0.5;
-  transition: opacity 0.3s ease;
-}
-
-.slick-dots li.slick-active button:before {
-  color: #ff6b6b;
-  opacity: 1;
 }
 
 /* Responsive Adjustments */
@@ -150,12 +139,18 @@
   }
 
   .banner-buttons button {
-    padding: 8px 16px;
+    padding: 10px 20px;
     font-size: 0.9rem;
+  }
+
+  .slick-prev,
+  .slick-next {
+    width: 50px;
+    height: 50px;
   }
 
   .slick-prev:before,
   .slick-next:before {
-    font-size: 30px;
+    font-size: 25px;
   }
 }

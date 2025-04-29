@@ -31,7 +31,7 @@ const Banner = () => {
     {
       id: 4,
       image: "https://i.pinimg.com/474x/62/92/73/629273455138cc31f3d5287d713ff9d8.jpg",
-      title: "Attack on titan",
+      title: "Attack on Titan",
       description:
         "A family is attacked by demons and only two members survive - Tanjiro and his sister Nezuko, who is turning into a demon slowly. Tanjiro sets out to become a demon slayer to avenge his family and cure his sister.",
     },
@@ -46,7 +46,7 @@ const Banner = () => {
 
   // React Slick settings
   const settings = {
-    dots: true,
+    dots: false, // Hide dots
     infinite: true,
     speed: 500,
     slidesToShow: 1,
