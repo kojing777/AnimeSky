@@ -2,9 +2,10 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import './TrendingAnimes.css'; // Import your CSS file
+import './TrendingAnimes.css';
 
 const TrendingAnimes = () => {
+
   const trendingAnimes = [
     {
       id: 1,

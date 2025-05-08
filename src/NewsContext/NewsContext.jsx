@@ -6,7 +6,6 @@ export const NewsProvider = ({ children }) => {
   const [news, setNews] = useState([]);
 
   useEffect(() => {
-    // Fetch news data (example static data)
     const fetchNews = async () => {
       const newsData = [
         { id: 1, title: 'New Anime Season Announced', source: 'AnimeNewsNetwork', url: 'https://www.crunchyroll.com/news' },

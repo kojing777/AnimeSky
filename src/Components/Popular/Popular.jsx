@@ -5,7 +5,6 @@ import "slick-carousel/slick/slick-theme.css";
 import "./Popular.css";
 
 const Popular = () => {
-  // Sample anime data for popular section
   const popularAnimeList = [
     {
       id: 1,
@@ -79,7 +78,7 @@ const Popular = () => {
     },
   ];
 
-  // React Slick settings
+
   const settings = {
     dots: false, 
     infinite: true,

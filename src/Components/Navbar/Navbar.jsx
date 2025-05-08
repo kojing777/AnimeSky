@@ -1,16 +1,16 @@
 import React from "react";
-import "./Navbar.css"; // Import the CSS file
+import "./Navbar.css";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [showSearch, setShowSearch] = React.useState(false);
-  const [theme, setTheme] = React.useState("dark"); // Default theme is dark
+  const [theme, setTheme] = React.useState("dark"); 
 
   // Function to toggle theme
   const toggleTheme = () => {
     const newTheme = theme === "dark" ? "light" : "dark";
     setTheme(newTheme);
-    document.body.setAttribute("data-theme", newTheme); // Apply theme to the body
+    document.body.setAttribute("data-theme", newTheme); 
   };
 
   return (

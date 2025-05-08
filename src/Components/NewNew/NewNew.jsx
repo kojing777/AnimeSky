@@ -2,10 +2,9 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "./NewNew.css"; // Import the CSS file
+import "./NewNew.css";
 
 const NewNew = () => {
-  // Sample anime data
   const animeList = [
     {
       id: 1,
@@ -79,7 +78,6 @@ const NewNew = () => {
     },
   ];
 
-  // React Slick settings
   const settings = {
     dots: false, 
     infinite: true, 

@@ -1,6 +1,5 @@
 import React from 'react'
 import Banner from './Banner/Banner'
-import About from './About/About'
 import TrendingAnimes from './AnimeSites/TrendingAnimes'
 import NewNew from './NewNew/NewNew'
 import PopularGames from './PopularGames/PopularGames'

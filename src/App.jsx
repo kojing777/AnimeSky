@@ -12,7 +12,7 @@ import Popular from './Components/Popular/Popular';
 import PopularGames from './Components/PopularGames/PopularGames';
 import About from './Components/About/About';
 import TrendingAnimes from './Components/AnimeSites/TrendingAnimes';
-import { NewsProvider } from './NewsContext/NewsContext'; // Import the NewsProvider
+import { NewsProvider } from './NewsContext/NewsContext';
 import News from './Components/News/News';
 
 function App() {
@@ -31,7 +31,7 @@ function App() {
             <Route path="/signup" element={<Signup />} />
             <Route path="/About" element={<About />} />
             <Route path="/Action" element={<About />} />
-            <Route path="/news" element={<News />} /> {/* Updated path */}
+            <Route path="/news" element={<News />} />
           </Routes>
         </div>
         <Footer />

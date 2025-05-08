@@ -1,5 +1,5 @@
 import React from "react";
-import "./PopularGames.css"; // Import the CSS file for styling
+import "./PopularGames.css";
 
 const PopularGames = () => {
   const popularGames = [

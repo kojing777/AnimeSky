@@ -1,7 +1,7 @@
 import React from 'react';
-import './About.css'; // Import your CSS file for styling
-import img from '../../assets/me3.jpg'; // Import your image
-import { FaGithub, FaLinkedin, FaTwitter, FaInstagram } from 'react-icons/fa'; // Import social icons
+import './About.css'; 
+import img from '../../assets/me3.jpg'; 
+import { FaGithub, FaLinkedin, FaTwitter, FaInstagram } from 'react-icons/fa';
 
 const About = () => {
   return (

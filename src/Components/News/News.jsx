@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
-import { NewsContext } from "../../NewsContext/NewsContext"; // Corrected import path
-import "./News.css"; // Import the CSS file
+import { NewsContext } from "../../NewsContext/NewsContext";
+import "./News.css"; 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faNewspaper, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
@@ -15,7 +15,7 @@ const News = () => {
       </h2>
       <div className="news-grid">
         {news.map((item) => {
-          console.log("News URL:", item.url); // Debugging line
+          console.log("News URL:", item.url);
           return (
             <div key={item.id} className="news-card">
               <a href={item.url} target="_blank" rel="noopener noreferrer">

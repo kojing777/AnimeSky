@@ -10,7 +10,6 @@ const Login = () => {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    // Simulate login logic
     toast.success("Logged in successfully!", {
       position: "top-center",
       autoClose: 3000,
